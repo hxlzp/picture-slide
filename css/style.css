@@ -1,0 +1,51 @@
+html,body,header,nav,main,footer,section,aside,content,address,
+div,p,span,i,strong,h1,h2,h3,h4,h5,h6,input,textarea,button,img,
+ul,li,ol,dl,dt,dd,table,thead,tbody{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    font-family: Open sans, sans-serif;
+    color: #222222;
+    background-color:#1B1B1B
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: none;
+}
+.clear::after{/*::伪元素*/
+    content: '';
+    display: block;
+    visibility: hidden;
+    height:0;
+    clear: both;
+}
+.wrap{
+    width:660px;
+    height: 150px;
+    position: relative;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.wrap > ul {
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+.wrap > ul > li {
+    height: inherit;
+    float: left;
+    padding-right: 20px;
+}
+.wrap > ul > li > a > img{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+}
